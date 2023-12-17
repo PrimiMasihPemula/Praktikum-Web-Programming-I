@@ -53,6 +53,15 @@
       </div>
     </section>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const homeButton = document.getElementById("homeButton");
+        homeButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          alert("Anda sudah berada di About Page");
+        });
+      });
+    </script>
+    <script>
       hamburger = document.querySelector(".hamburger");
       hamburger.onclick = function () {
         nav = document.querySelector(".navbar");
